@@ -21,7 +21,7 @@ if ($(".reviews").length > 0) {
 			el: ".reviews .swiper-pagination-mobile",
 			clickable: true,
 			renderBullet: function (index, className) {
-				return '<span class="' + className + '">' + (index + 1) + "</span>";
+				return index < 5 ? '<span class="' + className + '">' + (index + 1) + "</span>" : "";
 			},
 		},
 		navigation: {
