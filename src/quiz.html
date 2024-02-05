@@ -1,0 +1,609 @@
+@@include('inc/doc-start.html', {
+"title": "HAIRO Nutrition Quiz!"
+})
+
+@@include('inc/page-header.html', {
+color: 'header--light'
+})
+
+<main class="main">
+
+	<section class="page-quiz">
+		<div class="wrapper">
+			<div class="page-quiz__body">
+				<div class="page-quiz__top">
+					<h1 class="page-quiz__title title title_big">HAIRO Nutrition Quiz</h1>
+					<div class="page-quiz__subtitle">
+						<p>Discover if HAIRO Nutrition DHT Blocker is the right fit for you by answering these 10 simple
+							questions!</p>
+						<p>
+							<small>* Any information you provide is confident and never be shared with third
+								parties</small>
+						</p>
+					</div>
+				</div>
+				<div class="page-quiz__wrap">
+					<div class="page-quiz__button">
+						<button class="page-quiz__btn btn">
+							<span>start</span>
+						</button>
+					</div>
+					<div class="page-quiz__container">
+						<div class="page-quiz__container-wrap">
+							<div class="quiz">
+								<div class="quiz__line">
+									<span class="quizStepCount"></span>
+								</div>
+								<form action="#" class="quiz__body">
+									<div class="quiz__step active" data-step="1">
+										<div class="quiz__top">
+											<div class="quiz__top-box">
+												<div class="quiz__title title title_small title_red">What is your
+													gender?
+												</div>
+											</div>
+											<div class="quiz__top-number title title_small title_red">1/10</div>
+										</div>
+										<div class="quiz__step-body">
+											<label class="radio">
+												<input type="radio" name="gender" value="Male">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Male</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="gender" value="Female">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Female</div>
+											</label>
+											<div class="quiz__error">Required to select a value</div>
+										</div>
+										<div class="quiz__bottom">
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="2">
+												<span>next</span>
+											</button>
+										</div>
+									</div>
+									<div class="quiz__step" data-step="2">
+										<div class="quiz__top">
+											<div class="quiz__top-box">
+												<div class="quiz__title title title_small title_red">How old are you?
+												</div>
+											</div>
+											<div class="quiz__top-number title title_small title_red">2/10</div>
+										</div>
+										<div class="quiz__step-body">
+											<div class="quiz__body-container">
+												<label class="quiz__label">
+													<div class="quiz__label-caption">Type your age</div>
+													<input type="tel" inputmode="numeric" pattern="[0-9]*"
+														class="quiz__field field" placeholder="">
+												</label>
+												<div class="quiz__error">Field required</div>
+											</div>
+										</div>
+										<div class="quiz__bottom">
+											<button class="quiz__btn step--js btn-item btn-item_border"
+												data-next-step="1">
+												<span>back</span>
+											</button>
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="3">
+												<span>next</span>
+											</button>
+										</div>
+									</div>
+									<div class="quiz__step" data-step="3">
+										<div class="quiz__top">
+											<div class="quiz__top-box">
+												<div class="quiz__title title title_small title_red">Does anyone in your
+													family have hair loss?</div>
+											</div>
+											<div class="quiz__top-number title title_small title_red">3/10</div>
+										</div>
+										<div class="quiz__step-body">
+											<label class="radio">
+												<input type="radio" name="loss" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Yes</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="loss" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">No</div>
+											</label>
+											<div class="quiz__error">Required to select a value</div>
+										</div>
+										<div class="quiz__bottom">
+											<button class="quiz__btn step--js btn-item btn-item_border"
+												data-next-step="2">
+												<span>back</span>
+											</button>
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="4">
+												<span>next</span>
+											</button>
+										</div>
+									</div>
+									<div class="quiz__step" data-step="4">
+										<div class="quiz__top">
+											<div class="quiz__top-box">
+												<div class="quiz__title title title_small title_red">How do you usually
+													treat your hair?</div>
+											</div>
+											<div class="quiz__top-number title title_small title_red">4/10</div>
+										</div>
+										<div class="quiz__step-body">
+											<label class="radio">
+												<input type="radio" name="hair" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Just let it dry</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="hair" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Use hairdryer or straightener a lot</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="hair" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Tight hairstyles</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="hair" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Often change my hairstyle</div>
+											</label>
+											<div class="quiz__error">Required to select a value</div>
+										</div>
+										<div class="quiz__bottom">
+											<button class="quiz__btn step--js btn-item btn-item_border"
+												data-next-step="3">
+												<span>back</span>
+											</button>
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="5">
+												<span>next</span>
+											</button>
+										</div>
+									</div>
+									<div class="quiz__step" data-step="5">
+										<div class="quiz__top">
+											<div class="quiz__top-box">
+												<div class="quiz__title title title_small title_red">What do you usually
+													eat?</div>
+											</div>
+											<div class="quiz__top-number title title_small title_red">5/10</div>
+										</div>
+										<div class="quiz__step-body">
+											<label class="radio">
+												<input type="radio" name="EAT" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Healthy stuff mostly: like fruits, veggies,
+													and
+													meats or beans</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="EAT" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Fast food and snacks a lot</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="EAT" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Home-cooked meals, but not many fruits or
+													meats
+												</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="EAT" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">A bit of everything, no set pattern</div>
+											</label>
+											<div class="quiz__error">Required to select a value</div>
+										</div>
+										<div class="quiz__bottom">
+											<button class="quiz__btn step--js btn-item btn-item_border"
+												data-next-step="4">
+												<span>back</span>
+											</button>
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="6">
+												<span>next</span>
+											</button>
+										</div>
+									</div>
+									<div class="quiz__step" data-step="6">
+										<div class="quiz__top">
+											<div class="quiz__top-box">
+												<div class="quiz__title title title_small title_red">How often do you
+													feel
+													stressed?</div>
+											</div>
+											<div class="quiz__top-number title title_small title_red">6/10</div>
+										</div>
+										<div class="quiz__step-body">
+											<label class="radio">
+												<input type="radio" name="stressed" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Not really</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="stressed" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Sometimes</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="stressed" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Often</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="stressed" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">All the time</div>
+											</label>
+											<div class="quiz__error">Required to select a value</div>
+										</div>
+										<div class="quiz__bottom">
+											<button class="quiz__btn step--js btn-item btn-item_border"
+												data-next-step="5">
+												<span>back</span>
+											</button>
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="7">
+												<span>next</span>
+											</button>
+										</div>
+									</div>
+									<div class="quiz__step" data-step="7">
+										<div class="quiz__top">
+											<div class="quiz__top-box">
+												<div class="quiz__title title title_small title_red">Do you use hair dye
+													or
+													straighteners?</div>
+											</div>
+											<div class="quiz__top-number title title_small title_red">7/10</div>
+										</div>
+										<div class="quiz__step-body">
+											<label class="radio">
+												<input type="radio" name="straighteners" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Never</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="straighteners" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Sometimes</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="straighteners" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Every few months</div>
+											</label>
+											<label class="radio">
+												<input type="radio" name="straighteners" value="active">
+												<div class="radio__icon"></div>
+												<div class="radio__caption">Often</div>
+											</label>
+											<div class="quiz__error">Required to select a value</div>
+										</div>
+										<div class="quiz__bottom">
+											<button class="quiz__btn step--js btn-item btn-item_border"
+												data-next-step="6">
+												<span>back</span>
+											</button>
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="8">
+												<span>next</span>
+											</button>
+										</div>
+									</div>
+									<div class="quiz__step" data-step="8">
+										<div class="quiz__top">
+											<div class="quiz__top-box">
+												<div class="quiz__title title title_small title_red">Do you face any of
+													these scalp issues?</div>
+												<div class="quiz__subtitle">You can choose more than one</div>
+											</div>
+											<div class="quiz__top-number title title_small title_red">8/10</div>
+										</div>
+										<div class="quiz__step-body">
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">Dandruff</div>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">Sensitive scalp</div>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">Oily scalp</div>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">Dry scalp</div>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">No problems</div>
+											</label>
+											<div class="quiz__error">Required to select a value</div>
+										</div>
+										<div class="quiz__bottom">
+											<button class="quiz__btn step--js btn-item btn-item_border"
+												data-next-step="7">
+												<span>back</span>
+											</button>
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="9">
+												<span>next</span>
+											</button>
+										</div>
+									</div>
+									<div class="quiz__step" data-step="9">
+										<div class="quiz__top">
+											<div class="quiz__top-box">
+												<div class="quiz__title title title_small title_red">Where do you notice
+													hair thinning or loss?</div>
+												<div class="quiz__subtitle">You can choose more than one</div>
+											</div>
+											<div class="quiz__top-number title title_small title_red">9/10</div>
+										</div>
+										<div class="quiz__step-body">
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">Along the hairline</div>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">At the crown</div>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">Throughout the head</div>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">In patchy areas (about the size of a
+													coin)
+												</div>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">None yet, but I want to prevent future
+													issues
+												</div>
+											</label>
+											<div class="quiz__error">Required to select a value</div>
+										</div>
+										<div class="quiz__bottom">
+											<button class="quiz__btn step--js btn-item btn-item_border"
+												data-next-step="8">
+												<span>back</span>
+											</button>
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="10">
+												<span>next</span>
+											</button>
+										</div>
+									</div>
+									<div class="quiz__step" data-step="10">
+										<div class="quiz__top">
+											<div class="quiz__top-box">
+												<div class="quiz__title title title_small title_red">What are your hair
+													goals?</div>
+												<div class="quiz__subtitle">You can choose more than one</div>
+											</div>
+											<div class="quiz__top-number title title_small title_red">10/10</div>
+										</div>
+										<div class="quiz__step-body">
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">Stronger hair with less shedding</div>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">Increased hair density and volume</div>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">Healthier scalp (less dandruff, less
+													itching)
+												</div>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" name="straighteners" value="active">
+												<div class="checkbox__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+														viewBox="0 0 26 26" fill="none">
+														<rect width="26" height="26" rx="3" fill="#DB2550" />
+														<rect x="0.75" y="0.75" width="24.5" height="24.5" rx="2.25"
+															stroke="#DB2550" stroke-width="1.5" />
+														<path
+															d="M7.22266 12.4222L11.7878 18.1112C12.0408 18.4265 12.5338 18.3799 12.7233 18.0229L19.2227 5.77777"
+															stroke="#F4EEEE" stroke-width="1.125" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</div>
+												<div class="checkbox__caption">Faster growth of new hair</div>
+											</label>
+											<div class="quiz__error">Required to select a value</div>
+										</div>
+										<div class="quiz__bottom">
+											<button class="quiz__btn step--js btn-item btn-item_border"
+												data-next-step="9">
+												<span>back</span>
+											</button>
+											<button class="quiz__btn step--js btn-item btn-next loader--js">
+												<span>Fınısh quız</span>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-quiz__img">
+					<img src="img/quiz/img.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+@@include('inc/modal.html')
+
+@@include('inc/page-footer.html')
+
+@@include('inc/doc-end.html')

@@ -1,0 +1,168 @@
+.quiz {
+	&__line {
+		width: 100%;
+		height: 14px;
+		background-color: #3a3a3a;
+		position: relative;
+		z-index: 10;
+		margin-bottom: 30px;
+		span {
+			position: absolute;
+			height: 100%;
+			width: 10%;
+			top: 0;
+			left: 0;
+			background-color: #db2550;
+			transition: all 0.3s;
+		}
+	}
+	&__body {
+		background-color: #f4eeee;
+		position: relative;
+		&-container {
+			padding: 0px 30px 50px;
+		}
+	}
+	&__label {
+		max-width: 430px;
+		display: block;
+		position: relative;
+		&-caption {
+			position: absolute;
+			height: 28px;
+			color: #191919;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 140%;
+			top: 21px;
+			left: 14px;
+			z-index: 10;
+			transition: all 0.3s;
+			&.active {
+				top: 5px;
+				height: 14px;
+				font-size: 10px;
+			}
+		}
+	}
+	&__field {
+		font-size: 20px;
+	}
+	&__top {
+		padding: 30px 20px 41px 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__subtitle {
+		color: #000;
+		font-size: 20px;
+		line-height: 140%;
+		margin-top: 5px;
+	}
+	&__step {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(15px);
+		transition: all 0s;
+		&-body {
+			position: relative;
+		}
+		&.active {
+			position: relative;
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0px);
+			transition: all 0.3s;
+		}
+		&.error {
+			.quiz {
+				&__error {
+					display: block;
+				}
+			}
+		}
+	}
+	&__bottom {
+		padding: 30px;
+		display: flex;
+		justify-content: center;
+		gap: 32px;
+	}
+	&__error {
+		color: #a1203e;
+		position: relative;
+		padding: 20px 30px 0px;
+		display: none;
+	}
+}
+@media (max-width: 1290px) {
+}
+@media (max-width: 1010px) {
+	.quiz {
+		&__line {
+			height: 7px;
+		}
+		&__top {
+			padding: 30px 40px 32px 40px;
+		}
+		.title {
+			font-size: 40px;
+		}
+		&__subtitle {
+			font-size: 20px;
+			line-height: 140%;
+			margin-top: 10px;
+		}
+		&__body {
+			&-container {
+				padding: 0 40px 30px;
+			}
+		}
+		&__label {
+			max-width: 372px;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.quiz {
+		&__line {
+			margin-bottom: 22px;
+		}
+		&__top {
+			padding: 26px 20px 20px;
+		}
+		&__subtitle {
+			font-size: 12px;
+			line-height: 140%;
+			margin-top: 5px;
+		}
+		&__body {
+			&-container {
+				padding: 0px 20px;
+			}
+		}
+		&__label {
+			&-caption {
+				height: 24px;
+				font-size: 16px;
+				top: calc(50% - 12px);
+				left: 14px;
+			}
+		}
+		&__bottom {
+			padding: 19px 19px 26px;
+			flex-direction: column-reverse;
+			gap: 20px;
+		}
+		&__error {
+			padding: 10px 20px 0px;
+		}
+		.title {
+			font-size: 22px;
+		}
+	}
+}

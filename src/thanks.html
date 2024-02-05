@@ -1,0 +1,148 @@
+@@include('inc/doc-start.html', {
+"title": "Congratulations!"
+})
+
+@@include('inc/page-header.html', {
+color: 'header--light'
+})
+
+<main class="main">
+
+	<section class="thanks">
+		<div class="thanks-top">
+			<div class="thanks-top__wrap">
+				<div class="thanks-top__logo">
+					<img src="img/modal/logo-1.svg" alt="">
+				</div>
+				<div class="thanks-top__logo">
+					<img src="img/modal/logo-2.svg" alt="">
+				</div>
+				<div class="thanks-top__logo">
+					<img src="img/modal/logo-3.svg" alt="">
+				</div>
+				<div class="thanks-top__logo">
+					<img src="img/modal/logo-4.svg" alt="">
+				</div>
+				<div class="thanks-top__logo">
+					<img src="img/modal/logo-5.svg" alt="">
+				</div>
+				<div class="thanks-top__logo">
+					<img src="img/modal/logo-6.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="wrapper thanks__wrap">
+			<div class="thanks__container">
+				<div class="thanks__body">
+					<div class="thanks__title title title_small title_red">Thank You!</div>
+					<div class="thanks__subtitle">Your order is confirmed and on its way!<br> We're thrilled to be
+						a
+						part of your journey towards healthier, thicker hair.</div>
+					<div class="thanks__row">
+						<div class="thanks__coll">
+							<div class="thanks__item">
+								<div class="thanks__caption">First Name: </div>
+								<div id="value-name" class="thanks__value">Dakota</div>
+							</div>
+							<div class="thanks__item">
+								<div class="thanks__caption">Last Name: </div>
+								<div id="value-last-name" class="thanks__value">Mercer</div>
+							</div>
+							<div class="thanks__item">
+								<div class="thanks__caption">Zip: </div>
+								<div id="value-zip" class="thanks__value">56789</div>
+							</div>
+							<div class="thanks__item">
+								<div class="thanks__caption">Adress: </div>
+								<div id="value-address" class="thanks__value">123 Pine Street</div>
+							</div>
+							<div class="thanks__item">
+								<div class="thanks__caption">Apt / Suite: </div>
+								<div id="value-apt" class="thanks__value">4A</div>
+							</div>
+						</div>
+						<div class="thanks__coll">
+							<div class="thanks__item">
+								<div class="thanks__caption">City: </div>
+								<div id="value-city" class="thanks__value">Omaha</div>
+							</div>
+							<div class="thanks__item">
+								<div class="thanks__caption">State: </div>
+								<div id="value-state" class="thanks__value">Iowa</div>
+							</div>
+							<div class="thanks__item">
+								<div class="thanks__caption">Phone:</div>
+								<div id="value-phone" class="thanks__value">+1 (555) 123-4567</div>
+							</div>
+							<div class="thanks__item">
+								<div class="thanks__caption">Email:</div>
+								<div id="value-email" class="thanks__value">dakota.winslow@example.com</div>
+							</div>
+						</div>
+					</div>
+					<div class="thanks__bottom">
+						<div class="thanks__desc">
+							<p>
+								<span>Thank you for choosing HAIRO Nutrition!</span>
+							</p>
+							<p>Remember, your satisfaction is our top priority. If you have any concerns, our 100%
+								money-back guarantee has got you covered.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<script>
+	// Функция для получения значения куки по имени
+	function getCookie(name) {
+		var cookies = document.cookie.split(';');
+		for (var i = 0; i < cookies.length; i++) {
+			var cookie = cookies[i].trim();
+			// Проверяем, начинается ли куки с искомого имени
+			if (cookie.startsWith(name + '=')) {
+				// Возвращаем значение куки, отбрасывая имя
+				return decodeURIComponent(cookie.substring(name.length + 1));
+			}
+		}
+		// Если куки с указанным именем не найдены, возвращаем null
+		return null;
+	}
+
+	document.addEventListener('DOMContentLoaded', function () {
+		// Получаем значения из куков
+		var firstName = getCookie('firstName');
+		var lastName = getCookie('lastName');
+		var zip = getCookie('zip');
+		var address = getCookie('address');
+		var apt = getCookie('apt');
+		var city = getCookie('city');
+		var state = getCookie('state');
+		var phone = getCookie('phone');
+		var email = getCookie('email');
+
+		// Вставляем значения в нужные элементы
+		document.getElementById('value-name').textContent = firstName;
+		document.getElementById('value-last-name').textContent = lastName;
+		document.getElementById('value-zip').textContent = zip;
+		document.getElementById('value-address').textContent = address;
+		document.getElementById('value-apt').textContent = apt;
+		document.getElementById('value-city').textContent = city;
+		document.getElementById('value-state').textContent = state;
+		document.getElementById('value-phone').textContent = phone;
+		document.getElementById('value-email').textContent = email;
+	});
+
+
+</script>
+
+@@include('inc/modal.html')
+
+@@include('inc/page-footer.html', {
+color: 'footer--white'
+})
+
+@@include('inc/doc-end.html')

@@ -1,0 +1,180 @@
+.main-info {
+	padding-top: 180px;
+	padding-bottom: 133px;
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		gap: 90px;
+	}
+	&__img {
+		width: 390px;
+	}
+	&__right {
+		flex: 1;
+		.main-info {
+			&__img {
+				display: none;
+			}
+		}
+	}
+	&__desc {
+		max-width: 620px;
+		margin-top: 40px;
+		margin-bottom: 60px;
+		p + p {
+			margin-top: 20px;
+		}
+	}
+	&__icons {
+		display: flex;
+		gap: 24px;
+	}
+	&_man {
+		padding-bottom: 170px;
+		.main-info {
+			&__wrap {
+				gap: 30px;
+			}
+			&__img {
+				width: 450px;
+			}
+		}
+	}
+}
+@media (max-width: 1290px) {
+	.main-info {
+		padding-top: 75px;
+		padding-bottom: 103px;
+		&__wrap {
+			gap: 20px;
+		}
+		&__img {
+			width: 365px;
+		}
+		&_man {
+			padding-bottom: 140px;
+			.main-info {
+				&__img {
+					width: 365px;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.main-info {
+		&__wrap {
+			gap: 0px;
+		}
+		&__img {
+			width: 249px;
+			display: none;
+		}
+		&__right {
+			flex: auto;
+			width: 100%;
+			&-wrap {
+				display: flex;
+				gap: 17px;
+			}
+			&-box {
+				flex: 1;
+			}
+			.main-info {
+				&__img {
+					display: block;
+				}
+			}
+		}
+		&__desc {
+			margin-top: 20px;
+			margin-bottom: 0px;
+			font-size: 20px;
+			line-height: 140%;
+		}
+		&__icons {
+			gap: 30px;
+			margin-top: 40px;
+		}
+		&_man {
+			padding-bottom: 140px;
+			.main-info {
+				&__img {
+					width: 245px;
+					margin-top: -3px;
+					margin-bottom: 8px;
+				}
+				&__right {
+					&-wrap {
+						gap: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.main-info {
+		padding-top: 26px;
+		padding-bottom: 30px;
+		&__right {
+			&-wrap {
+				flex-direction: column-reverse;
+				gap: 30px;
+			}
+		}
+		&__desc {
+			margin-top: 15px;
+			font-size: 16px;
+			p + p {
+				margin-top: 12px;
+			}
+		}
+		&__icon {
+			flex-basis: 14%;
+		}
+		&__img {
+			width: 100%;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		&__icons {
+			gap: 21px 10px;
+			margin-top: 28px;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		&_man {
+			.main-info {
+				&__img {
+					width: 100%;
+					margin-top: -4px;
+					margin-bottom: -2px;
+					img {
+						width: 100%;
+						object-fit: cover;
+					}
+				}
+				&__right {
+					&-wrap {
+						gap: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 429px) {
+	.main-info {
+		&__icon {
+			flex-basis: auto;
+		}
+	}
+}

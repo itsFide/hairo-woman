@@ -1,0 +1,145 @@
+.page-quiz {
+	padding-top: 113px;
+	padding-bottom: 120px;
+	&__body {
+		position: relative;
+		z-index: 10;
+	}
+	&__top {
+		max-width: 870px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	&__subtitle {
+		max-width: 460px;
+		p + p {
+			margin-top: 8px;
+		}
+		small {
+			display: block;
+			max-width: 440px;
+			font-size: 16px;
+			line-height: 140%;
+		}
+	}
+	&__img {
+		position: absolute;
+		width: 477px;
+		height: 477px;
+		top: -6px;
+		right: -4px;
+	}
+	&__button {
+		display: flex;
+		justify-content: center;
+		margin-top: -24px;
+		&.hidden {
+			display: none;
+		}
+	}
+	&__btn {
+		font-size: 26px;
+	}
+	&__container {
+		display: none;
+		&-wrap {
+			margin-top: 154px;
+		}
+	}
+}
+@media (max-width: 1290px) {
+	.page-quiz {
+		&__top {
+			max-width: 560px;
+		}
+		&__title {
+			font-size: 90px;
+		}
+		&__img {
+			width: 420px;
+			height: 420px;
+			top: 0px;
+			right: 0px;
+		}
+		&__button {
+			margin-top: 0;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.page-quiz {
+		padding-top: 104px;
+		padding-bottom: 100px;
+		&__subtitle {
+			max-width: 334px;
+			font-size: 20px;
+			line-height: 140%;
+			p + p {
+				margin-top: 20px;
+			}
+			small {
+				max-width: 320px;
+				font-size: 16px;
+				line-height: 140%;
+			}
+		}
+		&__img {
+			width: 340px;
+			height: 340px;
+			top: 98px;
+		}
+		&__button {
+			margin-top: 25px;
+		}
+		&__container {
+			&-wrap {
+				margin-top: 116px;
+			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.page-quiz {
+		padding-top: 105px;
+		padding-bottom: 52px;
+		&__top {
+			gap: 11px;
+		}
+		&__title {
+			font-size: 36px;
+		}
+		&__subtitle {
+			font-size: 16px;
+			p + p {
+				margin-top: 10px;
+			}
+			small {
+				font-size: 14px;
+				margin-right: -10px;
+				max-width: 325px;
+			}
+		}
+		&__img {
+			position: relative;
+			width: 100%;
+			height: auto;
+			top: 0px;
+			right: 0px;
+			margin-top: 22px;
+			padding: 0px 24px;
+		}
+		&__button {
+			margin-top: 21px;
+		}
+		&__btn {
+			font-size: 12.9px;
+		}
+		&__container {
+			&-wrap {
+				margin-top: 29px;
+				margin-bottom: 45px;
+			}
+		}
+	}
+}
